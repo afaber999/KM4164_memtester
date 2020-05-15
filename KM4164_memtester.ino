@@ -232,11 +232,11 @@ void loop() {
 	
     Serial.print("Check DRAM retention errors after a delay of " );
     Serial.print(totdelay);
-    Serial.print(" ms " );
+    Serial.print(" ms: " );
 
 	if ( (errs7 > 0)  && (totdelay <= 20) ) {
 		Serial.print(" failed fot : ");
-		Serial.print(errs);
+		Serial.print(errs7);
 		Serial.println(" errors ");
 	} else {
 		Serial.println(" OK ");    
